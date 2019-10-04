@@ -32,23 +32,6 @@ export default new Router({
           component: () => import(/* webpackChunkName: "list" */ './views/List.vue')
         }
       ]
-    },
-    {
-      path: '/detail',
-      name: 'detail',
-      component: () => import(/* webpackChunkName: "list" */ './views/detail.vue'),
-      children: [
-        {
-          path: 'inner',
-          name: 'inner',
-          component: () => import(/* webpackChunkName: "list" */ './views/detailIner.vue')
-        }
-      ]
-    },
-    {
-      path: '*',
-      name: '404',
-      component: () => import(/* webpackChunkName: "list" */ './views/nofFound.vue')
     }
   ]
 })
