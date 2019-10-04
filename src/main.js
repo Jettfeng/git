@@ -14,15 +14,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  data: () => {
-    return {
-      app: "msg in root vue"
-    };
-  },
-  methods: {
-    print() {
-      console.log("print");
-    }
-  },
   render: h => h(App)
 }).$mount("#app");

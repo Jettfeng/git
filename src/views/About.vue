@@ -1,13 +1,12 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div class="about">
+    <h1>This is an about page</h1>
   </div>
 </template>
 <script>
 export default {
-  name: "App"
+ 
 };
 </script>
-
-<style lang="less" scoped>
+<style>
 </style>
